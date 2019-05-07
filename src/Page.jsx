@@ -393,7 +393,7 @@ export class PageInternal extends PureComponent {
 
           this.ref = ref;
         }}
-        style={{ position: 'relative' }}
+        style={{...this.props.style, position: 'relative' }}
         data-page-number={pageNumber}
         {...this.eventProps}
       >
